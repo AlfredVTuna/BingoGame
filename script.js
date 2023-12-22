@@ -83,6 +83,13 @@ function generateBingoBoard() {
                 cell.textContent = "Trofe";
                 row.appendChild(cell);
                 }
+                    else if(i=3){
+                var cell = document.createElement("td");
+                cell.className = "bingo-row";
+                cell.textContent = "15min i bollhavet";
+                row.appendChild(cell);
+                }
+                        
                 else {
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
