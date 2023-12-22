@@ -114,12 +114,9 @@ function generateBingoBoard() {
                     var fontSize = 30 - word.length;
                     cell.style.fontSize = fontSize + "px";
                 }
-                if(i==3 && j ==1){
-                    bingoWords="51"
-                    cell.textContent = bingoWords[i * 5 + j];
-                }else{
+               
                 cell.textContent = word;
-                }
+                
             } else {
                 cell.textContent = "N/A";
             }
