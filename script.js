@@ -1,4 +1,4 @@
-@@ -1,81 +1,81 @@
+
 // JavaScript code to handle the bingo game
 var bingoWords = [
 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
@@ -84,19 +84,11 @@ function generateBingoBoard() {
                 }
 
                 else {
-                else if(j==0 && i==5){
-                var cell = document.createElement("td");
+               var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Pepparkaka";
                 cell.textContent = "Biljett till ecsape room";
                 row.appendChild(cell);
-                }
-                else if(j==0 && i==6){
-                var cell = document.createElement("td");
-                cell.className = "bingo-row";
-                cell.textContent = "Pepparkaka";
-                row.appendChild(cell);
-                }
             }
             if(i != 0 && j != 0){
             var cell = document.createElement("td");
