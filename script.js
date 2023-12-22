@@ -61,7 +61,7 @@ function generateBingoBoard() {
                 cell.textContent = "Bild";
                 row.appendChild(cell);
                 }
-                else if(j==0 && i=2){
+                else if(j==0 && i==2){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Biljett till ecsape room";
@@ -80,7 +80,7 @@ function generateBingoBoard() {
                 cell.className = "bingo-row";
                 cell.textContent = "15min i bollhavet";
                 row.appendChild(cell);
-                }else {
+                }else{
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Pepparkaka";
