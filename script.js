@@ -75,7 +75,7 @@ function generateBingoBoard() {
                 else if(j==0 && i==2){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
-                cell.textContent = "Biljett till ecsape room";
+                cell.textContent = "Pepparkaka";
                 row.appendChild(cell);
                 }
                 else if(j==0 && i==3){
@@ -91,10 +91,16 @@ function generateBingoBoard() {
                 row.appendChild(cell);
                 }
                         
-                else {
+                else if(j==0 && i==5){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
-                cell.textContent = "Pris";
+                cell.textContent = "Biljett till ecsape room";
+                row.appendChild(cell);
+                }
+                else if(j==0 && i==6){
+                var cell = document.createElement("td");
+                cell.className = "bingo-row";
+                cell.textContent = "Pepparkaka";
                 row.appendChild(cell);
                 }
             }
@@ -108,7 +114,11 @@ function generateBingoBoard() {
                     var fontSize = 30 - word.length;
                     cell.style.fontSize = fontSize + "px";
                 }
+                if(i==3 && j ==1){
+                    cell.textContent = "51";
+                }else{
                 cell.textContent = word;
+                }
             } else {
                 cell.textContent = "N/A";
             }
