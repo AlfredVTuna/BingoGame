@@ -1,10 +1,10 @@
-
-// JavaScript code to handle the bingo game
 var bingoWords = [
 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
 18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,
 36,37,38,39,40,41,42,43,44,45,46,47,48,49,50  // all the way to 50
+
 ];
+
 function shuffle(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -23,9 +23,7 @@ function generateBingoBoard() {
         var row = document.createElement("tr");
         //set the first row to be the header with price, B, I, N, G, O
         for (var j = 0; j < 6; j++) {
-            
             if(i==0 && j==1){
-                
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "B";
@@ -57,38 +55,39 @@ function generateBingoBoard() {
             }
             
             if(j==0){
-                if(j==0 && i==1){
+                if(j==0 && i==0){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Bild";
                 row.appendChild(cell);
                 }
-                else if(j==0 && i==2){
+                else if(j==0 && i=1){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Biljett till ecsape room";
-               
                 row.appendChild(cell);
                 }
-                else if(j==0 && i==3){
+                else if(j==0 && i=2){
+                else if(j==0 && i==2){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Trofe";
                 row.appendChild(cell);
                 }
-                    else if(j==0 && i==4){
+                    else if(j==0 && i=3){
+                    else if(j==0 && i==3){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "15min i bollhavet";
                 row.appendChild(cell);
                 }
-
+                        
                 else {
-               var cell = document.createElement("td");
+                var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Pepparkaka";
-                
                 row.appendChild(cell);
+                }
             }
             if(i != 0 && j != 0){
             var cell = document.createElement("td");
@@ -99,11 +98,7 @@ function generateBingoBoard() {
                     var fontSize = 30 - word.length;
                     cell.style.fontSize = fontSize + "px";
                 }
-                if(i==3 && j ==1){
-                    cell.textContent = "51";
-                }else{
                 cell.textContent = word;
-                }
             } else {
                 cell.textContent = "N/A";
             }
