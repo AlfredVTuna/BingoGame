@@ -55,34 +55,32 @@ function generateBingoBoard() {
             }
             
             if(j==0){
-                if(j==0 && i==0){
+                if(j==0 && i==1){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Bild";
                 row.appendChild(cell);
                 }
-                else if(j==0 && i=1){
+                else if(j==0 && i=2){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Biljett till ecsape room";
                 row.appendChild(cell);
                 }
-                else if(j==0 && i=2){
-                else if(j==0 && i==2){
+              
+                else if(j==0 && i==3){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Trofe";
                 row.appendChild(cell);
                 }
-                    else if(j==0 && i=3){
-                    else if(j==0 && i==3){
+              
+                    else if(j==0 && i==4){
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "15min i bollhavet";
                 row.appendChild(cell);
-                }
-                        
-                else {
+                }else {
                 var cell = document.createElement("td");
                 cell.className = "bingo-row";
                 cell.textContent = "Pepparkaka";
